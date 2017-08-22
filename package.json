@@ -5,7 +5,7 @@
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js",
     "start": "npm-run-all --parallel security-check open:src",
-    "open:src": "node buildScripts/devServer.js",
+    "open:src": "babel-node buildScripts/devServer.js",
     "security-check": "nsp check",
     "localtunnel": "lt --port 3010",
     "share": "npm-run-all --parallel open:src localtunnel"
@@ -25,7 +25,6 @@
     "chalk": "1.1.3",
     "cheerio": "0.22.0",
     "compression": "1.6.2",
-    "cross-env": "3.1.3",
     "css-loader": "0.25.0",
     "eslint": "3.8.1",
     "eslint-plugin-import": "2.0.1",
