@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "JavaScript development environment basic setup",
   "scripts": {
+    "prestart": "node buildScripts/startMessage.js",
+    "start": "node buildScripts/devServer.js"
   },
   "author": "Andrew Bogdanov",
   "license": "MIT",
