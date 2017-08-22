@@ -4,7 +4,9 @@
   "description": "JavaScript development environment basic setup",
   "scripts": {
     "prestart": "node buildScripts/startMessage.js",
-    "start": "node buildScripts/devServer.js"
+    "start": "node buildScripts/devServer.js",
+    "security-check": "nsp check",
+    "share": "lt --port 3010"
   },
   "author": "Andrew Bogdanov",
   "license": "MIT",
